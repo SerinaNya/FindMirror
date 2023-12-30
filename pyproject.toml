@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "FindMirror"
+version = "0.1.0"
+description = ""
+authors = ["SerinaNya <34389622+SerinaNya@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+mkdocs-material = "^9.5.3"
+mkdocs-macros-plugin = "^1.0.5"
+mkdocs-include-markdown-plugin = "^6.0.4"
+
+
+[[tool.poetry.source]]
+name = "mirrors"
+url = "https://mirror.sjtu.edu.cn/pypi/web/simple"
+priority = "default"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
