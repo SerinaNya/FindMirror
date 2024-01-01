@@ -14,5 +14,5 @@
         pytorch: {{ mirror_base }}/anaconda/cloud
         pytorch-lts: {{ mirror_base }}/anaconda/cloud
         simpleitk: {{ mirror_base }}/anaconda/cloud
-        deepmodeling: {{ mirror_base }}/anaconda/cloud/
+        deepmodeling: {{ mirror_base }}/anaconda/cloud
     ```
