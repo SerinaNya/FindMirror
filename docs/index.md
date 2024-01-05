@@ -16,20 +16,30 @@
 
     本站点在编写时参考了其中的部分内容。
 
+---
+
+## 镜像站列表 Mirror List
+
 以下是推荐的一些镜像站，其中的大多数都在本文档中被使用。
 
-| 镜像站归属       | 代码      | 地理位置     | URL                                     |
-| ---------------- | --------- | ------------ | --------------------------------------- |
-| 上海交通大学     | `SJTUG`   | 上海         | <https://mirrors.sjtug.sjtu.edu.cn/>    |
-| 清华大学         | `TUNA`    | 北京         | <https://mirrors.tuna.tsinghua.edu.cn/> |
-| 南京大学         | `NJU`     | 南京（江苏） | <https://mirrors.nju.edu.cn/>           |
-| 中国科学技术大学 | `USTC`    | 合肥（安徽） | <https://mirrors.ustc.edu.cn/>          |
-| 山东大学         | `SDU`     | 济南（山东） | <https://mirrors.sdu.edu.cn/#/mirror>   |
-| 兰州大学         | `LZUOSS`  | 兰州（甘肃） | <https://mirror.lzu.edu.cn/>            |
-| 华为云           | `HUAWEI`  | 全球 CDN     | <https://mirrors.huaweicloud.com/home>  |
-| 阿里云           | `ALIYUN`  | 全球 CDN     | <https://developer.aliyun.com/mirror/>  |
-| 腾讯云           | `TENCENT` | 全球 CDN     | <https://mirrors.tencent.com/>          |
-| xTom HK          | `XTOMHK`  | 中国香港     | <https://mirror.xtom.com.hk/>           |
+!!! tip
+
+    点击 **👇「🏢 镜像站提供者」**一列中的名称，即可设置为优先使用的镜像站。
+
+{% for name, attr in {
+    "上海交通大学 SJTUG": {"loc": "上海", "url":"https://mirror.sjtu.edu.cn"},
+    "清华大学 TUNA": {"loc": "北京", "url":"https://mirrors.tuna.tsinghua.edu.cn"},
+    "南京大学 NJU": {"loc": "南京（江苏）", "url":"https://mirrors.nju.edu.cn"},
+    "中国科学技术大学 USTC": {"loc": "合肥（安徽）", "url":"https://mirrors.ustc.edu.cn"},
+    "南方科技大学 SUSTECH": {"loc": "深圳（广东）", "url":"https://mirrors.sustech.edu.cn"},
+    "山东大学 SDU": {"loc": "济南（山东）", "url":"https://mirrors.sdu.edu.cn/#/mirror"},
+    "兰州大学 LZU": {"loc": "兰州（甘肃）", "url":"https://mirror.lzu.edu.cn"},
+    "华为云 HUAWEI": {"loc": "全球 CDN", "url":"https://mirrors.huaweicloud.com/home"},
+    "阿里云 ALIYUN": {"loc": "全球 CDN", "url":"https://developer.aliyun.com/mirror"},
+    "腾讯云 TENCENT": {"loc": "全球 CDN", "url":"https://mirrors.tencent.com"},
+    "xTom HK": {"loc": "香港", "url":"https://mirror.xtom.com.hk"},
+    }.items() %}
+{% include "../templates/index_select_provider.md" %}{% endfor %}
 
 !!! note
 
@@ -41,4 +51,4 @@
 
     可以通过邮件联系作者。
 
-    [i+FindMirrorProject@serinanya.cn](mailto:i+FindMirrorProject@serinanya.cn)
+    [projects+FindMirror@serinanya.cn](mailto:projects+FindMirror@serinanya.cn)

@@ -46,6 +46,7 @@ theme:
     - search.highlight
     - search.share
     - header.autohide
+    - content.tooltips
     
 nav:
   - 'index.md'
@@ -90,3 +91,6 @@ plugins:
     - search
     - macros
     - include-markdown
+
+extra_javascript:
+  - javascripts/extra.js
