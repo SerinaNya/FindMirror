@@ -54,6 +54,7 @@ nav:
     - 'apt.md'
     - 'alpine.md'
     - 'python.md'
+    - 'ros2.md'
 
 markdown_extensions:
   - pymdownx.highlight:
@@ -63,14 +64,10 @@ markdown_extensions:
       auto_title: true
       linenums: true
   - pymdownx.critic
-  - pymdownx.caret
   - pymdownx.keys
-  - pymdownx.mark
-  - pymdownx.tilde
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
-  - admonition
   - pymdownx.details
   - pymdownx.tabbed:
       combine_header_slug: true
@@ -86,11 +83,17 @@ markdown_extensions:
       options:
         custom_icons:
           - overrides/.icons
+  - admonition
+  - def_list
+  - toc:
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
 
 plugins:
-    - search
-    - macros
-    - include-markdown
+  - search
+  - macros
+  - include-markdown
+  - glightbox
 
 extra_javascript:
   - javascripts/extra.js

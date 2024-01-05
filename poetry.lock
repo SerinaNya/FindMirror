@@ -396,6 +396,22 @@ url = "https://mirror.sjtu.edu.cn/pypi/web/simple"
 reference = "mirrors"
 
 [[package]]
+name = "mkdocs-glightbox"
+version = "0.3.6"
+description = "MkDocs plugin supports image lightbox with GLightbox."
+optional = false
+python-versions = "*"
+files = [
+    {file = "mkdocs-glightbox-0.3.6.tar.gz", hash = "sha256:f46c675e20793d11c9fc29c9420dfb160ee1d8cfbf4782e82d006f953e19a14c"},
+    {file = "mkdocs_glightbox-0.3.6-py3-none-any.whl", hash = "sha256:15310edfa1cf25cf483068932588f87ceb875148994431df1ee2c5aa03632db1"},
+]
+
+[package.source]
+type = "legacy"
+url = "https://mirror.sjtu.edu.cn/pypi/web/simple"
+reference = "mirrors"
+
+[[package]]
 name = "mkdocs-include-markdown-plugin"
 version = "6.0.4"
 description = "Mkdocs Markdown includer plugin."
@@ -961,4 +977,4 @@ reference = "mirrors"
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.12"
-content-hash = "ef9dadc52e1d738f58d4b6b4f958d69559d310453b141cc6c385b67fab08001f"
+content-hash = "71dd9fb5059aaa53cb960fd18fe946fa4317f0b26b88a51f7397844c77d22bc7"
